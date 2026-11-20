@@ -1,0 +1,62 @@
+[
+  {
+    "case": "QA-01",
+    "status": "PASS",
+    "outcome": "answered",
+    "expected_outcome": "answered"
+  },
+  {
+    "case": "QA-02",
+    "status": "PASS",
+    "outcome": "answered",
+    "expected_outcome": "answered"
+  },
+  {
+    "case": "QA-03",
+    "status": "PASS",
+    "outcome": "answered",
+    "expected_outcome": "answered"
+  },
+  {
+    "case": "QA-04",
+    "status": "PASS",
+    "outcome": "answered",
+    "expected_outcome": "answered"
+  },
+  {
+    "case": "QA-05",
+    "status": "PASS",
+    "outcome": "answered",
+    "expected_outcome": "answered"
+  },
+  {
+    "case": "QA-06",
+    "status": "PASS",
+    "outcome": "no_data",
+    "expected_outcome": "no_data"
+  },
+  {
+    "case": "QA-07",
+    "status": "PASS",
+    "outcome": "refused",
+    "expected_outcome": "refused"
+  },
+  {
+    "case": "QA-08",
+    "status": "PASS",
+    "outcome": "answered",
+    "expected_outcome": "answered"
+  },
+  {
+    "case": "QA-09",
+    "status": "PASS",
+    "outcome": "refused",
+    "expected_outcome": "refused"
+  },
+  {
+    "case": "QA-10",
+    "status": "PASS",
+    "outcome": "refused",
+    "expected_outcome": "refused"
+  }
+]

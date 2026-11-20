@@ -1,0 +1,36 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.venv_backup/
+.env
+*.sqlite
+*.sqlite3
+
+.env.neon
+
+gold_m2_export.sql
+
+.env.neon.reader
+
+.env.local.backup
+
+.env.before_neon
+
+# Additional local environment files
+.env.*
+!.env.example
+
+# Local backups and debugging files
+*_backup*
+*_before_*
+README_backup.md
+test_query_manual.py
+
+# Local runtime and system files
+*.db
+*.db-journal
+*.sqlite-journal
+.DS_Store
+
+# Local exports
+*.sql.gz
