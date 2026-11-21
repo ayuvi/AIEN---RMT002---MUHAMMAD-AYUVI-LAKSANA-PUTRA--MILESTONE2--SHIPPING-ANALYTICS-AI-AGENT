@@ -176,6 +176,32 @@ def _qa_route(question: str, history: list[dict[str, Any]]) -> tuple[str, str] |
     if re.search(r"(?:on.time|tepat waktu|ketepatan waktu|carrier performance)", t):
         return "carrier_performance", period
     if "refund" in t or "pengembalian dana" in t:
+        amount_request = bool(
+            re.search(
+                r"\b(total|jumlah|nominal|amount|sum|"
+                r"average|avg|rata-rata|rerata)\b",
+                t
+            )
+        )
+
+        grouped_request = bool(
+            re.search(
+                r"\b(per kota|per city|per carrier|"
+                r"by city|by carrier|berdasarkan kota)\b",
+                t
+            )
+        )
+
+        explicit_rate = bool(
+            re.search(
+                r"\b(refund rate|rasio refund|persentase refund|"
+                r"refund ratio)\b",
+                t
+            )
+        )
+
+        if (amount_request or grouped_request) and not explicit_rate:
+            return None
         return "refund_rate", period
     if ("kota" in t or "city" in t or "destination" in t or "bandung" in t) and ("kiriman" in t or "shipment" in t or "total" in t):
         return "city_analytics", period
